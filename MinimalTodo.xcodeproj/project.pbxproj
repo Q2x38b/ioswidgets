@@ -7,16 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C574C50CB0CD45B9BEEE8F7A /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0087A3B45345B1A32D0716 /* ColorExtensions.swift */; };
-		E8332AFE34DE4FC0BEBCB1C0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8420AE118A43DDACF88596 /* SettingsView.swift */; };
-		F96EE15C55CD418E8BC83E0E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33729FE7448869A5B091A /* NotificationManager.swift */; };
 		3F8352BF2F1456AC00F5141C /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8352BE2F1456AC00F5141C /* TaskDetailView.swift */; };
 		3F8352C12F1456C100F5141C /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8352C02F1456C100F5141C /* TaskRowView.swift */; };
-		D5000001 /* ConvexClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000001 /* ConvexClient.swift */; };
-		D5000002 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000002 /* AuthManager.swift */; };
-		D5000003 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000003 /* AuthView.swift */; };
-		D5000004 /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000004 /* LocationSearchView.swift */; };
-		D5000005 /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000005 /* DayDetailView.swift */; };
 		A1000001 /* MinimalTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001 /* MinimalTodoApp.swift */; };
 		A1000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002 /* ContentView.swift */; };
 		A1000003 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000003 /* TodoItem.swift */; };
@@ -33,7 +25,14 @@
 		C1000001 /* TodoIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000001 /* TodoIntents.swift */; };
 		C1000002 /* TodoIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000001 /* TodoIntents.swift */; };
 		C1000003 /* AppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000002 /* AppShortcuts.swift */; };
-		C574C50CB0CD45B9BEEE8F7B /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0087A3B45345B1A32D0716 /* ColorExtensions.swift */; };
+		C574C50CB0CD45B9BEEE8F7A /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0087A3B45345B1A32D0716 /* ColorExtensions.swift */; };
+		D5000001 /* ConvexClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000001 /* ConvexClient.swift */; };
+		D5000002 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000002 /* AuthManager.swift */; };
+		D5000003 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000003 /* AuthView.swift */; };
+		D5000004 /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000004 /* LocationSearchView.swift */; };
+		D5000005 /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000005 /* DayDetailView.swift */; };
+		E8332AFE34DE4FC0BEBCB1C0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8420AE118A43DDACF88596 /* SettingsView.swift */; };
+		F96EE15C55CD418E8BC83E0E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33729FE7448869A5B091A /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,11 +60,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CF0087A3B45345B1A32D0716 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
-		CA8420AE118A43DDACF88596 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		6BA33729FE7448869A5B091A /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		3F8352BE2F1456AC00F5141C /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		3F8352C02F1456C100F5141C /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		6BA33729FE7448869A5B091A /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		A2000001 /* MinimalTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalTodoApp.swift; sourceTree = "<group>"; };
 		A2000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A2000003 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
@@ -84,6 +81,8 @@
 		B4000002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2000001 /* TodoIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoIntents.swift; sourceTree = "<group>"; };
 		C2000002 /* AppShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcuts.swift; sourceTree = "<group>"; };
+		CA8420AE118A43DDACF88596 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CF0087A3B45345B1A32D0716 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		D6000001 /* ConvexClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexClient.swift; sourceTree = "<group>"; };
 		D6000002 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		D6000003 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
@@ -141,7 +140,7 @@
 				A4000001 /* MinimalTodo.entitlements */,
 				A4000002 /* Info.plist */,
 			);
-			path = MinimalTodo;
+			path = "Stride Productivity";
 			sourceTree = "<group>";
 		};
 		F1100001 /* Model */ = {
@@ -450,16 +449,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MinimalTodo/MinimalTodo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Stride Productivity/MinimalTodo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52GYU3BNFZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MinimalTodo/Info.plist;
+				INFOPLIST_FILE = "Stride Productivity/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Stride;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,7 +465,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stride.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.strideproductivity.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -480,16 +478,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MinimalTodo/MinimalTodo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Stride Productivity/MinimalTodo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52GYU3BNFZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MinimalTodo/Info.plist;
+				INFOPLIST_FILE = "Stride Productivity/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Stride;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -497,7 +494,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stride.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.strideproductivity.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -524,7 +521,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stride.app.widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.strideproductivity.app.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG WIDGET_EXTENSION";
@@ -553,7 +550,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stride.app.widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.strideproductivity.app.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = WIDGET_EXTENSION;
