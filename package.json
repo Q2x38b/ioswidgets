@@ -1,0 +1,15 @@
+{
+  "name": "minimaltodo-backend",
+  "version": "1.0.0",
+  "description": "Convex backend for MinimalTodo iOS app",
+  "scripts": {
+    "dev": "convex dev",
+    "deploy": "convex deploy"
+  },
+  "dependencies": {
+    "convex": "^1.17.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

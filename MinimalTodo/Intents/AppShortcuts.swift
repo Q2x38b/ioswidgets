@@ -6,7 +6,6 @@ struct AppShortcuts: AppShortcutsProvider {
             intent: AddTodoIntent(),
             phrases: [
                 "Add a todo in \(.applicationName)",
-                "Add \(\.$title) to \(.applicationName)",
                 "Create a todo in \(.applicationName)",
                 "New todo in \(.applicationName)"
             ],
@@ -19,8 +18,7 @@ struct AppShortcuts: AppShortcutsProvider {
             phrases: [
                 "Show my todos in \(.applicationName)",
                 "List todos in \(.applicationName)",
-                "What are my todos in \(.applicationName)",
-                "Show \(\.$filter) todos in \(.applicationName)"
+                "What are my todos in \(.applicationName)"
             ],
             shortTitle: "List Todos",
             systemImageName: "list.bullet"
@@ -41,8 +39,7 @@ struct AppShortcuts: AppShortcutsProvider {
             intent: CompleteTodoIntent(),
             phrases: [
                 "Complete a todo in \(.applicationName)",
-                "Mark todo done in \(.applicationName)",
-                "Finish \(\.$todo) in \(.applicationName)"
+                "Mark todo done in \(.applicationName)"
             ],
             shortTitle: "Complete Todo",
             systemImageName: "checkmark.circle"

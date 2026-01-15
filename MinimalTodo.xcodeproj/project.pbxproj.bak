@@ -7,16 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C574C50CB0CD45B9BEEE8F7A /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0087A3B45345B1A32D0716 /* ColorExtensions.swift */; };
-		E8332AFE34DE4FC0BEBCB1C0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8420AE118A43DDACF88596 /* SettingsView.swift */; };
-		F96EE15C55CD418E8BC83E0E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA33729FE7448869A5B091A /* NotificationManager.swift */; };
+		3F8352BD2F14569600F5141C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8352BC2F14569600F5141C /* MainView.swift */; };
 		3F8352BF2F1456AC00F5141C /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8352BE2F1456AC00F5141C /* TaskDetailView.swift */; };
 		3F8352C12F1456C100F5141C /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8352C02F1456C100F5141C /* TaskRowView.swift */; };
-		D5000001 /* ConvexClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000001 /* ConvexClient.swift */; };
-		D5000002 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000002 /* AuthManager.swift */; };
-		D5000003 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000003 /* AuthView.swift */; };
-		D5000004 /* LocationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000004 /* LocationSearchView.swift */; };
-		D5000005 /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6000005 /* DayDetailView.swift */; };
 		A1000001 /* MinimalTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000001 /* MinimalTodoApp.swift */; };
 		A1000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002 /* ContentView.swift */; };
 		A1000003 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000003 /* TodoItem.swift */; };
@@ -33,7 +26,6 @@
 		C1000001 /* TodoIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000001 /* TodoIntents.swift */; };
 		C1000002 /* TodoIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000001 /* TodoIntents.swift */; };
 		C1000003 /* AppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2000002 /* AppShortcuts.swift */; };
-		C574C50CB0CD45B9BEEE8F7B /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0087A3B45345B1A32D0716 /* ColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,9 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CF0087A3B45345B1A32D0716 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
-		CA8420AE118A43DDACF88596 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		6BA33729FE7448869A5B091A /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		3F8352BC2F14569600F5141C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3F8352BE2F1456AC00F5141C /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		3F8352C02F1456C100F5141C /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
 		A2000001 /* MinimalTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalTodoApp.swift; sourceTree = "<group>"; };
@@ -84,11 +74,6 @@
 		B4000002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2000001 /* TodoIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoIntents.swift; sourceTree = "<group>"; };
 		C2000002 /* AppShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcuts.swift; sourceTree = "<group>"; };
-		D6000001 /* ConvexClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexClient.swift; sourceTree = "<group>"; };
-		D6000002 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
-		D6000003 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		D6000004 /* LocationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchView.swift; sourceTree = "<group>"; };
-		D6000005 /* DayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +97,9 @@
 		E2000001 = {
 			isa = PBXGroup;
 			children = (
+				3F8352C02F1456C100F5141C /* TaskRowView.swift */,
+				3F8352BE2F1456AC00F5141C /* TaskDetailView.swift */,
+				3F8352BC2F14569600F5141C /* MainView.swift */,
 				F1000001 /* MinimalTodo */,
 				F2000001 /* TodoWidgetExtension */,
 				F3000001 /* Products */,
@@ -125,16 +113,6 @@
 				A2000002 /* ContentView.swift */,
 				A2000006 /* AddTodoView.swift */,
 				A2000007 /* TodoRowView.swift */,
-				D6000004 /* LocationSearchView.swift */,
-				D6000005 /* DayDetailView.swift */,
-				D6000001 /* ConvexClient.swift */,
-				D6000002 /* AuthManager.swift */,
-				D6000003 /* AuthView.swift */,
-				CF0087A3B45345B1A32D0716 /* ColorExtensions.swift */,
-				CA8420AE118A43DDACF88596 /* SettingsView.swift */,
-				6BA33729FE7448869A5B091A /* NotificationManager.swift */,
-				3F8352BE2F1456AC00F5141C /* TaskDetailView.swift */,
-				3F8352C02F1456C100F5141C /* TaskRowView.swift */,
 				F1100001 /* Model */,
 				F1200001 /* Intents */,
 				A2000005 /* Assets.xcassets */,
@@ -282,10 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C574C50CB0CD45B9BEEE8F7A /* ColorExtensions.swift in Sources */,
-				E8332AFE34DE4FC0BEBCB1C0 /* SettingsView.swift in Sources */,
-				F96EE15C55CD418E8BC83E0E /* NotificationManager.swift in Sources */,
 				A1000001 /* MinimalTodoApp.swift in Sources */,
+				3F8352BD2F14569600F5141C /* MainView.swift in Sources */,
 				3F8352C12F1456C100F5141C /* TaskRowView.swift in Sources */,
 				A1000002 /* ContentView.swift in Sources */,
 				A1000003 /* TodoItem.swift in Sources */,
@@ -295,11 +271,6 @@
 				A1000007 /* TodoRowView.swift in Sources */,
 				C1000001 /* TodoIntents.swift in Sources */,
 				C1000003 /* AppShortcuts.swift in Sources */,
-				D5000001 /* ConvexClient.swift in Sources */,
-				D5000002 /* AuthManager.swift in Sources */,
-				D5000003 /* AuthView.swift in Sources */,
-				D5000004 /* LocationSearchView.swift in Sources */,
-				D5000005 /* DayDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +427,7 @@
 				DEVELOPMENT_TEAM = 52GYU3BNFZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MinimalTodo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Stride;
+				INFOPLIST_KEY_CFBundleDisplayName = "Minimal Todo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,7 +438,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stride.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minimaltodo.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -486,7 +457,7 @@
 				DEVELOPMENT_TEAM = 52GYU3BNFZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MinimalTodo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Stride;
+				INFOPLIST_KEY_CFBundleDisplayName = "Minimal Todo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -497,7 +468,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stride.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minimaltodo.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -516,7 +487,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TodoWidgetExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Stride Widget";
+				INFOPLIST_KEY_CFBundleDisplayName = "Todo Widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -524,10 +495,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stride.app.widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minimaltodo.app.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG WIDGET_EXTENSION";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -545,7 +515,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TodoWidgetExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Stride Widget";
+				INFOPLIST_KEY_CFBundleDisplayName = "Todo Widget";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -553,10 +523,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stride.app.widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minimaltodo.app.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = WIDGET_EXTENSION;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -2,6 +2,11 @@ import WidgetKit
 import SwiftUI
 import AppIntents
 
+// Color extension for widget
+extension Color {
+    static let appAccent = Color(red: 0.6, green: 0.6, blue: 0.62)
+}
+
 // MARK: - Timeline Provider
 
 struct TodoProvider: AppIntentTimelineProvider {
@@ -86,47 +91,65 @@ struct SmallWidgetView: View {
     let entry: TodoEntry
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
+        VStack(alignment: .leading, spacing: 10) {
             HStack {
-                Image(systemName: "checkmark.circle")
+                Image(systemName: "calendar.badge.checkmark")
+                    .font(.title3)
+                    .foregroundStyle(Color.appAccent)
+                Text("Tasks")
                     .font(.headline)
-                Text("Todos")
-                    .font(.headline)
-                    .fontWeight(.semibold)
+                    .fontWeight(.bold)
             }
-            .foregroundStyle(.primary)
 
             if entry.displayItems.isEmpty {
                 Spacer()
-                Text("All done!")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                VStack(spacing: 4) {
+                    Image(systemName: "checkmark.circle.fill")
+                        .font(.largeTitle)
+                        .foregroundStyle(.green)
+                    Text("All done!")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+                .frame(maxWidth: .infinity)
                 Spacer()
             } else {
-                VStack(alignment: .leading, spacing: 4) {
+                VStack(alignment: .leading, spacing: 6) {
                     ForEach(entry.displayItems.prefix(3)) { item in
-                        HStack(spacing: 6) {
-                            Image(systemName: item.isCompleted ? "checkmark.circle.fill" : "circle")
-                                .font(.caption)
-                                .foregroundStyle(item.isCompleted ? .green : .secondary)
-                            Text(item.title)
-                                .font(.caption)
-                                .lineLimit(1)
-                                .strikethrough(item.isCompleted)
-                                .foregroundStyle(item.isCompleted ? .secondary : .primary)
+                        HStack(spacing: 8) {
+                            Button(intent: ToggleTodoIntent(id: item.id.uuidString)) {
+                                Image(systemName: item.isCompleted ? "checkmark.circle.fill" : "circle")
+                                    .font(.body)
+                                    .foregroundStyle(item.isCompleted ? Color.appAccent : .secondary)
+                            }
+                            .buttonStyle(.plain)
+
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text(item.title)
+                                    .font(.caption)
+                                    .lineLimit(1)
+                                    .strikethrough(item.isCompleted)
+                                    .foregroundStyle(item.isCompleted ? .secondary : .primary)
+
+                                if let time = item.startTime {
+                                    Text(time)
+                                        .font(.caption2)
+                                        .foregroundStyle(.secondary)
+                                }
+                            }
                         }
                     }
                 }
-                Spacer(minLength: 0)
-            }
+                Spacer()
 
-            if entry.pendingCount > 0 {
-                Text("\(entry.pendingCount) remaining")
-                    .font(.caption2)
-                    .foregroundStyle(.secondary)
+                if entry.pendingCount > 3 {
+                    Text("+\(entry.pendingCount - 3) more")
+                        .font(.caption2)
+                        .foregroundStyle(.tertiary)
+                }
             }
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding()
         .containerBackground(.fill.tertiary, for: .widget)
     }
 }
@@ -303,23 +326,62 @@ struct WidgetTodoRow: View {
 
     var body: some View {
         HStack(spacing: 8) {
-            if showToggle {
-                Button(intent: ToggleTodoIntent(id: item.id.uuidString)) {
-                    Image(systemName: item.isCompleted ? "checkmark.circle.fill" : "circle")
-                        .foregroundStyle(item.isCompleted ? .green : .secondary)
-                }
-                .buttonStyle(.plain)
-            } else {
+            Button(intent: ToggleTodoIntent(id: item.id.uuidString)) {
                 Image(systemName: item.isCompleted ? "checkmark.circle.fill" : "circle")
-                    .font(.caption)
-                    .foregroundStyle(item.isCompleted ? .green : .secondary)
+                    .font(showToggle ? .body : .caption)
+                    .foregroundStyle(item.isCompleted ? Color.appAccent : .secondary)
+            }
+            .buttonStyle(.plain)
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text(item.title)
+                    .font(showToggle ? .body : .caption)
+                    .lineLimit(showToggle ? 2 : 1)
+                    .strikethrough(item.isCompleted)
+                    .foregroundStyle(item.isCompleted ? .secondary : .primary)
+
+                if let time = item.startTime {
+                    Text(time)
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                }
             }
 
-            Text(item.title)
-                .font(.caption)
-                .lineLimit(1)
-                .strikethrough(item.isCompleted)
-                .foregroundStyle(item.isCompleted ? .secondary : .primary)
+            Spacer()
+
+            if item.priority != .none {
+                Circle()
+                    .fill(priorityColor(item.priority))
+                    .frame(width: 4, height: 4)
+            }
+        }
+        .padding(showToggle ? 10 : 6)
+        .background(Color(.systemGray6).opacity(0.3))
+        .cornerRadius(showToggle ? 10 : 6)
+        .overlay(
+            RoundedRectangle(cornerRadius: showToggle ? 10 : 6)
+                .stroke(colorForTaskColor(item.color), lineWidth: showToggle ? 2 : 1)
+                .opacity(0.3)
+        )
+    }
+
+    private func priorityColor(_ priority: TaskPriority) -> Color {
+        switch priority {
+        case .high: return .red
+        case .medium: return .orange
+        case .low: return Color.appAccent
+        case .none: return .gray
+        }
+    }
+
+    private func colorForTaskColor(_ taskColor: TaskColor) -> Color {
+        switch taskColor {
+        case .grey: return .gray
+        case .rose: return .pink
+        case .purple: return .purple
+        case .amber: return .orange
+        case .sky: return .blue
+        case .emerald: return .green
         }
     }
 }
